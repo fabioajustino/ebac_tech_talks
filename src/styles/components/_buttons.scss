@@ -1,0 +1,27 @@
+@use '../variables' as*;
+
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; //para que o texto não quebre
+
+    &--primary {
+        color: #fff;
+        background-color: $purple;
+    }
+
+    @media (max-width: 640px) {
+        display: block; //suficiente para que um link ocupe uma linha
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+
+}
